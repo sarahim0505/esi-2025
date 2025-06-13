@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e0f7fa, #b2dfdb);
+      color: #333;
+    }
+
+    .site-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 10px;
+      text-align: center;
+    }
+    
+    .site-title {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #00695c;
+    }
+    
+    .main-nav {
+      margin: 20px 0;
+    }
+    
+    .main-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    
+    .main-nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 5px 10px;
+      transition: color 0.3s;
+    }
+    
+    .main-nav a:hover {
+      color: #00695c;
+    }
+
+    #main, #creators, #thanks, #footer {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #00695c;
+      text-align: center;
+    }
+
+    #main img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    #main p {
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+    }
+
+    .creator-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .creator-card {
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .creator-card h3 {
+      margin: 0;
+      color: #004d40;
+      text-align: center;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #footer {
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Nouvelle en-tête comme sur la page de réservation -->
+  <header class="site-header fade-in">
+    <h1 class="site-title">Découvrir Banfora</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Patrimoine.html">Patrimoine</a></li>
+        <li><a href="reservation.html">Réservation d'hôtel</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="main" class="fade-in">
+    <h1>Bienvenue à Banfora</h1>
+    <img src="banfora2.jpg" alt="Vue panoramique de Banfora">
+    
+    <h2>Introduction à Banfora</h2>
+    <p>
+      Banfora, la cité du Paysan Noir, est une ville très dynamique du Burkina Faso. Elle est caractérisée par sa densité pluviométrique. En effet, elle fait partie des régions les plus arrosées du pays.
+    </p>
+    <p>
+      Située au Sud-Ouest du Burkina Faso, Banfora est la capitale de la région des Cascades. Connue pour sa richesse naturelle, sa culture vivante et son patrimoine exceptionnel, elle attire chaque année des visiteurs curieux de découvrir des trésors comme les Cascades de Karfiguéla, le Lac sacré de Tengrela ou encore les mystérieux Dômes de Fabédougou.
+    </p>
+  </div>
+
+  <div id="creators" class="fade-in">
+    <h2>Créateurs du site</h2>
+    <div class="creator-list">
+      <div class="creator-card">
+        <h3>Traoré Issouf</h3>
+      </div>
+      <div class="creator-card">
+        <h3>Sankara Adjara</h3>
+      </div>
+      <div class="creator-card">
+        <h3>Soma Abdoul-Rahim</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="thanks" class="fade-in">
+    <h2>Remerciements</h2>
+    <p>
+      Nous tenons à exprimer notre profonde gratitude à <strong>l'École Supérieure d'Informatique</strong> pour son accompagnement et son soutien tout au long de la réalisation de ce site web.
+      Grâce aux enseignements dispensés et aux ressources mises à notre disposition, nous avons pu mettre en pratique nos compétences en développement web.
+    </p>
+  </div>
+
+  <div id="footer" class="fade-in">
+    <p>&copy; Banfora 2025 - Tous droits réservés</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lac de Tingrela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #e0f7fa, #b2dfdb);
+            color: #333;
+        }
+
+        .site-header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px 10px;
+            text-align: center;
+        }
+        
+        .site-title {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #00695c;
+        }
+        
+        .main-nav {
+            margin: 20px 0;
+        }
+        
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+        
+        .main-nav a:hover {
+            color: #00695c;
+        }
+
+        #main-content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #00695c;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #footer {
+            text-align: center;
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header fade-in">
+        <h1 class="site-title">Lac de Tingrela</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Patrimoine.html">Patrimoine</a></li>
+                <li><a href="reservation.html">Réservation d'hotel</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content" class="fade-in">
+        <p>
+            Le Lac de Tingrela est un site naturel situé dans la région du Nord-Ouest du Burkina Faso, près du village de Tingrela, dans la province de la Kossi.
+            Ce lac est connu pour ses eaux calmes et ses paysages sereins, entourés de collines et de savanes typiques de la région.<br>
+            Il constitue un lieu de détente et un espace important pour la pêche et les activités agricoles des populations locales.
+        </p>
+        <img src="lac.jpg" alt="Figure 1">
+
+        <h2>Description du site</h2>
+
+        <p>
+            Cette lac s'étend sur plusieurs hectares et présente une eau claire, abritant une biodiversité variée.<br>
+            Les rives sont bordées par une végétation dense composée d'arbres, de buissons et de plantes aquatiques,
+            offrant un habitat favorable à de nombreuses espèces d'oiseaux, poissons et autres animaux.
+            Le site est propice à la randonnée, à l'observation de la faune et à la pratique de la pêche traditionnelle.
+            Les habitants utilisent le lac pour l'irrigation et les activités agricoles, faisant de ce lieu un élément central de la vie locale.
+        </p>
+        <img src="lac 2.jpeg" alt="Figure 2">
+
+        <h2>Historique</h2>
+
+        <p>
+            Le Lac de Tingrela a une importance culturelle et économique majeure pour les communautés qui vivent autour.<br>
+            Historiquement, il a été un point d'eau vital dans une région souvent marquée par la sécheresse.<br>
+            Le lac a contribué à l'établissement des villages alentours, notamment Tingrela, en fournissant une source durable d'eau pour l'homme, le bétail et l'agriculture.<br>
+            Au fil du temps, ce site naturel est devenu aussi un lieu de rassemblement social et festif,<br>
+            notamment lors de certaines cérémonies traditionnelles.<br>
+            Sa préservation est aujourd'hui un enjeu important pour les autorités locales afin de maintenir cet équilibre entre environnement et développement.
+        </p>
+
+        <img src="lac 3.jpeg" alt="Fugire 3">
+        <img src="lac4.jpg" alt="Figure 4">
+        <img src="lac5.jpg" alt="Fugire 6">
+    </div>
+
+    <div id="footer" class="fade-in">
+        <p>&copy; Banfora 2025 - Tous droits réservés</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Pics de Sindou</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(to right, #e0f7fa, #b2dfdb);
+            color: #333;
+        }
+
+        .site-header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px 10px;
+            text-align: center;
+        }
+        
+        .site-title {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #00695c;
+        }
+        
+        .main-nav {
+            margin: 20px 0;
+        }
+        
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+        
+        .main-nav a:hover {
+            color: #00695c;
+        }
+
+        #main-content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #00695c;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #footer {
+            text-align: center;
+            color: #333;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header fade-in">
+        <h1 class="site-title">Les Pics de Sindou</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Patrimoine.html">Patrimoine</a></li>
+                <li><a href="reservation.html">Réservation d'hôtel</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content" class="fade-in">
+        <p>
+            Les Pics de Sindou sont un site naturel exceptionnel situé dans la région des Cascades, au sud-ouest du Burkina Faso, près de la ville de Banfora.<br>
+            Ce site se compose d'une série de formations rocheuses en forme de pics aigus, s'élevant sur plusieurs dizaines de mètres.<br>
+            Ces pics, faits de grès, ont été sculptés par l'érosion au fil des millénaires, créant un paysage spectaculaire et unique en Afrique de l'Ouest.
+        </p>
+        <img src="pics.3.jpeg" alt="Détail des formations rocheuses">
+
+        <h2>Description du site</h2>
+
+        <p>
+            Les Pics de Sindou sont constitués d'une chaîne de formations rocheuses qui s'étendent sur plusieurs kilomètres.<br>
+            Les roches présentent des formes pointues, effilées, semblables à des aiguilles ou des dents de pierre.<br>
+            Le site offre de nombreuses possibilités de randonnée et d'escalade pour les visiteurs aventureux.<br>
+            On y trouve également une végétation adaptée au climat semi-aride, ainsi qu'une riche biodiversité.<br>
+            L'accès au site est souvent guidé par des locaux qui connaissent bien les sentiers et les légendes du lieu.
+        </p>
+        <img src="pics.3.jpeg" alt="Paysage des Pics de Sindou">
+        <img src="pics4.jpg" alt="Randonnée dans les Pics">
+
+        <h2>Historique</h2>
+
+        <p>
+            Les Pics de Sindou se sont formés il y a plusieurs millions d'années, lorsque des couches de grès ont été soumises à l'érosion causée par le vent et la pluie.<br>
+            Ces formations ont longtemps servi de refuge pour les populations locales durant les périodes de conflits.<br>
+            Elles sont également liées à plusieurs légendes et croyances traditionnelles, qui font du site un lieu sacré pour certaines communautés.<br>
+            Aujourd'hui, les Pics de Sindou attirent de nombreux touristes pour leur beauté naturelle et leur valeur culturelle, contribuant ainsi au développement local.
+        </p>
+
+        <img src="pics.webp" alt="Vue panoramique des Pics">
+        <img src="pic6.jpg" alt="Formations rocheuses détaillées">
+    </div>
+
+    <div id="footer" class="fade-in">
+        <p>&copy; Banfora 2025 - Tous droits réservés</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e0f7fa, #b2dfdb);
+      color: #333;
+    }
+
+    .site-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 10px;
+      text-align: center;
+    }
+    
+    .site-title {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #00695c;
+    }
+    
+    .main-nav {
+      margin: 20px 0;
+    }
+    
+    .main-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    
+    .main-nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 5px 10px;
+      transition: color 0.3s;
+    }
+    
+    .main-nav a:hover {
+      color: #00695c;
+    }
+
+    #main, #footer {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #00695c;
+      text-align: center;
+    }
+
+    #footer {
+      text-align: center;
+      color: #333;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 12px 20px;
+      font-size: 1.1rem;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004d40;
+    }
+
+    .question-group {
+      margin: 10px 0;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+    
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+      display: inline;
+      font-weight: normal;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header fade-in">
+    <h1 class="site-title">Bienvenue sur la page de réservation</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Patrimoine.html">Patrimoine</a></li>
+        <li><a href="reservation.html">Réservation d'hôtel</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="main" class="fade-in">
+    <h2>Veillez remplir les informations suivantes </h2>
+    
+    <form>
+      <label for="nom">Votre Nom :</label>
+      <input type="text" id="nom" placeholder="ex : Soma">
+      
+      <label for="prenom">Votre Prenom :</label>
+      <input type="text" id="prenom" placeholder="ex : Abdoul-Rahim">
+      
+      <label for="age">Votre age :</label>
+      <input type="number" id="age">
+      
+      <label for="paysd">Votre Pays d'origine :</label>
+      <input type="text" id="paysd" placeholder="ex : Bukina-Faso">
+      
+      <label for="ville">Votre ville d'origine :</label>
+      <input type="text" id="ville" placeholder="ex : Ouagadougou">
+      
+      <label for="email">Votre Email :</label>
+      <input type="email" id="email" placeholder="ex : esi2025@gmail.com">
+      
+      <label for="datearr">Date d'arrivée :</label>
+      <input type="date" id="datearr">
+      
+      <label for="datedepart">Date de départ :</label>
+      <input type="date" id="datedepart">
+      
+      <label for="hotel">Veillez faire le choix de votre Hôtel de sejour :</label>
+      <select name="hotel" id="hotel">
+        <option value="hotel1">Hôtel Cascades Pâlace</option>
+        <option value="hotel2">Hôtel Le Calypso</option>
+        <option value="hotel3">Hôtel-Restaurant Canne à Sucre</option>
+        <option value="hotel4">Hôtel Fara</option>
+        <option value="hotel5">Hôtel Comoé</option>
+        <option value="hotel6">Hôtel Jackson</option>
+        <option value="hotel7">Auberge Saint-David Djatigui</option>
+        <option value="hotel7">Le Campement de Baobab</option>
+      </select>
+      
+      <label for="chambre">Quelle type de chambre souhaiteriez-vous ?</label>
+      <select id="chambre">
+        <option value="simple">Simple</option>
+        <option value="double">Double</option>
+        <option value="suite">Suite</option>
+        <option value="famille">Famille</option>
+      </select>
+      
+      <div class="question-group">
+        <label>Souhaitez-vous une chambre climatisée ?:</label>
+        <input type="radio" id="clim-oui" name="climatisation" value="oui">
+        <label for="clim-oui">Oui</label>
+        <input type="radio" id="clim-non" name="climatisation" value="non">
+        <label for="clim-non">Non</label>
+      </div>
+      
+      <div class="question-group">
+        <label>Souhaitez-vous une visite guidée des sites touristiques ?</label>
+        <input type="radio" id="visite-oui" name="visite" value="oui">
+        <label for="visite-oui">Oui</label>
+        <input type="radio" id="visite-non" name="visite" value="non">
+        <label for="visite-non">Non</label>
+      </div>
+      
+      <div class="question-group">
+        <label>Pourquoi avez-vous choisi la ville de Banfora :</label>
+        <div>
+          <input type="radio" id="raison1" name="raison" value="dynamique">
+          <label for="raison1">Banfora est une ville très dynamique</label><br>
+          <input type="radio" id="raison2" name="raison" value="sites">
+          <label for="raison2">C'est la ville qui regorge plusieurs sites touristiques</label><br>
+          <input type="radio" id="raison3" name="raison" value="culture">
+          <label for="raison3">Par sa diversité culturelle</label><br>
+          <input type="radio" id="raison4" name="raison" value="autres">
+          <label for="raison4">Autres</label>
+        </div>
+      </div>
+      
+      <div class="question-group">
+        <label>Veuillez choisir les sites que vous aimeriez visiter :</label>
+        <div>
+          <input type="checkbox" id="cascades" name="sites" value="cascades">
+          <label for="cascades">Cascades de Karfiguéla</label><br>
+          <input type="checkbox" id="domes" name="sites" value="domes">
+          <label for="domes">Dômes de Fabedougou</label><br>
+          <input type="checkbox" id="lac" name="sites" value="lac">
+          <label for="lac">Lac de Tingrela</label><br>
+          <input type="checkbox" id="pics" name="sites" value="pics">
+          <label for="pics">Pics de Sindou</label><br>
+          <input type="checkbox" id="mont" name="sites" value="mont">
+          <label for="mont">Le mont Tenekourou</label><br>
+          <input type="checkbox" id="falaises" name="sites" value="falaises">
+          <label for="falaises">Les Falaises de Banfora</label><br>
+          <input type="checkbox" id="mare" name="sites" value="mare">
+          <label for="mare">La mare aux hippopotames de Konadougou</label><br>
+          <input type="checkbox" id="ruines" name="sites" value="ruines">
+          <label for="ruines">Les ruines de Loropéni</label><br>
+          <input type="checkbox" id="foret" name="sites" value="foret">
+          <label for="foret">La forêt classée de Dida</label><br>
+          <input type="checkbox" id="champs" name="sites" value="champs">
+          <label for="champs">Les champs de canne à sucre de Bérégadougou</label><br>
+          <input type="checkbox" id="salle" name="sites" value="salle">
+          <label for="salle">Salle Polyvalente de Banfora</label>
+        </div>
+      </div>
+      
+      <div class="question-group">
+        <label>Pourquoi aimeriez-vous visiter ces sites touristiques de Banfora :</label>
+        <div>
+          <input type="radio" id="pourquoi1" name="pourquoi" value="attractifs">
+          <label for="pourquoi1">Parce qu'ils sont plus attractifs</label><br>
+          <input type="radio" id="pourquoi2" name="pourquoi" value="entendu">
+          <label for="pourquoi2">J'ai entendu parler de ces sites</label><br>
+          <input type="radio" id="pourquoi3" name="pourquoi" value="conseil">
+          <label for="pourquoi3">Mes proches m'ont conseillé pour leur diversité</label><br>
+          <input type="radio" id="pourquoi4" name="pourquoi" value="adore">
+          <label for="pourquoi4">J'adore visiter ces sites touristiques</label>
+        </div>
+      </div>
+      
+      <label for="mess">Veuillez nous laisser votre avis :</label>
+      <textarea name="mess" id="mess" rows="5"></textarea>
+      
+      <input type="submit" value="Envoyer Votre réservation">
+    </form>
+  </div>
+
+  <div id="footer" class="fade-in">
+    <p>&copy; Banfora 2025 - Tous droits réservés</p>
+  </div>
+</body>
+</html>

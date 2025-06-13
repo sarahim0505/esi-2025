@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Patrimoine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e0f7fa, #b2dfdb);
+      color: #333;
+    }
+
+    .site-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px 10px;
+      text-align: center;
+    }
+    
+    .site-title {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #00695c;
+    }
+    
+    .main-nav {
+      margin: 20px 0;
+    }
+    
+    .main-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    
+    .main-nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 5px 10px;
+      transition: color 0.3s;
+    }
+    
+    .main-nav a:hover {
+      color: #00695c;
+    }
+
+    /* Styles pour les sections de contenu */
+    #main, #nav1, #footer {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #00695c;
+      text-align: center;
+    }
+
+    #nav1 ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    #nav1 ul li {
+      text-align: center;
+    }
+
+    #nav1 a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    #nav1 a:hover {
+      color: #00796b;
+    }
+
+    #nav1 img {
+      width: 200px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+
+    #nav1 li {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    #footer {
+      text-align: center;
+      color: #333;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header fade-in">
+    <h1 class="site-title">Patrimoine de Banfora</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Patrimoine.html">Patrimoine</a></li>
+        <li><a href="reservation.html">Réservation d'hôtel</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <div id="main" class="fade-in">
+    <h2><u>Les Trésors de Banfora</u></h2>
+    <p>
+      Banfora regorge de sites naturels et culturels exceptionnels. Découvrez ici les joyaux patrimoniaux qui font la richesse de cette ville burkinabè.
+    </p>
+  </div>
+
+  <!-- Liste des sites touristiques -->
+  <div id="nav1" class="fade-in">
+    <ul>
+      <li>
+        <a href="cascade de banfora.html">Les Cascades de Banfora</a><br>
+        <img src="cascade2.jpg" alt="Cascade de Banfora">
+      </li>
+      <li>
+        <a href="dome de fabedougou.html">Les Dômes de Fabédougou</a><br>
+        <img src="dome.jpg" alt="Dômes de Fabédougou">
+      </li>
+      <li>
+        <a href="lac de tingrela.html">Le Lac de Tengrela (Mare aux hippopotames)</a><br>
+        <img src="lac.jpg" alt="Lac de Tengrela">
+      </li>
+      <li>
+        <a href="lac de tingrela.html">Les Pics de Sindou</a><br>
+        <img src="pics4.jpg" alt="Pics de Sindou">
+      </li>
+      <li>
+        <a href="mont tenakourou.html">Le Mont Ténakourou</a><br>
+        <img src="mont.jpeg" alt="Mont Ténakourou">
+      </li>
+      <li>
+        <a href="les falaises de banfora.html">Les Falaises de Banfora</a><br>
+        <img src="falaise2.jpg" alt="Falaises de Banfora">
+      </li>
+      <li>
+        <a href="Les Ruines de Lorepéni.html">Les Ruines de Loropéni</a><br>
+        <img src="ruine.jpg" alt="Ruines de Loropéni">
+      </li>
+      <li>
+        <a href="La Forêt classéé de Dida.html">La Forêt classée de Dida</a><br>
+        <img src="foret.jpeg" alt="Forêt de Dida">
+      </li>
+      <li>
+        <a href="Les champs de canne à sucre de Bérégadougou.html">Champs de canne à sucre de Bérégadougou</a><br>
+        <img src="canne a sucre.avif" alt="Canne à sucre Bérégadougou">
+      </li>
+      <li>
+        <a href="Salle Polyvalente de Banfora.html">Salle Polyvalente de Banfora</a><br>
+        <img src="salle1.jpg" alt="Salle Polyvalente de Banfora">
+      </li>
+    </ul>
+  </div>
+
+  <div id="footer" class="fade-in">
+    <p>&copy; Banfora 2025 - Tous droits réservés</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie - Découvrir Banfora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e0f7fa, #b2dfdb);
+    }
+
+    header {
+      background: linear-gradient(to right, #00796b, #004d40);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      transform: translateY(-100%);
+      opacity: 0;
+      transition: all 1s ease;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #00695c;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 1s ease 0.5s;
+    }
+
+    ul.container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      list-style: none;
+      margin: 0;
+      transform: translateY(50px);
+      opacity: 0;
+      transition: all 1s ease 1s;
+    }
+
+    ul.container li {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    ul.container li:hover {
+      transform: scale(1.03);
+    }
+
+    ul.container img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .content {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .content h2 {
+      margin: 0;
+      color: #004d40;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #263238;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      transform: translateY(50px);
+      opacity: 0;
+      transition: all 1s ease 1.5s;
+    }
+
+    .visible {
+      transform: translateY(0) !important;
+      opacity: 1 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <h2>Découvrir Banfora</h2>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="patrimoine.html">Patrimoine</a>
+      <a href="reservation.html">Réservation d'hôtel</a>
+      <a href="galerie.html">Galerie</a>
+    </nav>
+  </header>
+
+  <h1 id="title">Galerie des Sites Patrimoniaux de Banfora</h1>
+
+  <ul class="container" id="gallery">
+    <li><img src="cascade.jpg"><div class="content"><h2>Ici les cascades de Banfora</h2></div></li>
+    <li><img src="cascade2.jpg"><div class="content"><h2>Cascades</h2></div></li>
+    <li><img src="OIP.jpeg"><div class="content"><h2>Cascades</h2></div></li>
+    <li><img src="R.jpeg"><div class="content"><h2>Cascades</h2></div></li>
+    <li><img src="OIP.jpeg"><div class="content"><h2>Dôme de Fabédougou</h2></div></li>
+    <li><img src="dome.jpg"><div class="content"><h2>Dômes de Fabédougou</h2></div></li>
+    <li><img src="drome-3b87d.jpg"><div class="content"><h2>Dômes de Fabédougou</h2></div></li>
+    <li><img src="dsc_1453.jpg"><div class="content"><h2>Dômes de Fabédougou</h2></div></li>
+    <li><img src="arton41.jpg"><div class="content"><h2>Dômes de Fabédougou</h2></div></li>
+    <li><img src="pic2.jpg"><div class="content"><h2>Pics de Sindou</h2></div></li>
+    <li><img src="pic6.jpg"><div class="content"><h2>Pics de Sindou</h2></div></li>
+    <li><img src="pics.3.jpeg"><div class="content"><h2>Pics de Sindou</h2></div></li>
+    <li><img src="sindou.jpg"><div class="content"><h2>Pics de Sindou</h2></div></li>
+    <li><img src="pics4.jpg"><div class="content"><h2>Pics de Sindou</h2></div></li>
+    <li><img src="pics1.jpeg"><div class="content"><h2>Pics de Sindou</h2></div></li>
+    <li><img src="lac 2.jpeg"><div class="content"><h2>Lac de Tingrela</h2></div></li>
+    <li><img src="lac 3.jpeg"><div class="content"><h2>Lac de Tingrela</h2></div></li>
+    <li><img src="lac.jpg"><div class="content"><h2>Lac de Tingrela</h2></div></li>
+    <li><img src="lac4.jpg"><div class="content"><h2>Lac de Tingrela</h2></div></li>
+    <li><img src="lac5.jpg"><div class="content"><h2>Lac de Tingrela</h2></div></li>
+    <li><img src="foet1.jpeg"><div class="content"><h2>Forêt classée de Dida</h2></div></li>
+    <li><img src="foret.jpeg"><div class="content"><h2>Forêt classée de Dida</h2></div></li>
+    <li><img src="falaise2.jpg"><div class="content"><h2>Les falaises de Banfora</h2></div></li>
+    <li><img src="falaise3.jpeg"><div class="content"><h2>Les falaises de Banfora</h2></div></li>
+    <li><img src="falaises.jpg"><div class="content"><h2>Les falaises de Banfora</h2></div></li>
+    <li><img src="ruine.jpg"><div class="content"><h2>Les Ruines de Lorepeni</h2></div></li>
+    <li><img src="ruine1.jpg"><div class="content"><h2>Les Ruines de Lorepeni</h2></div></li>
+    <li><img src="ruine2.jpeg"><div class="content"><h2>Les Ruines de Lorepeni</h2></div></li>
+    <li><img src="ruine4.webp"><div class="content"><h2>Les Ruines de Lorepeni</h2></div></li>
+    <li><img src="ruine5.jpeg"><div class="content"><h2>Les Ruines de Lorepeni</h2></div></li>
+    <li><img src="salle.jpg"><div class="content"><h2>Salle Polyvalente de Banfora</h2></div></li>
+    <li><img src="salle1.jpg"><div class="content"><h2>Salle Polyvalente de Banfora</h2></div></li>
+    <li><img src="salle4.jpg"><div class="content"><h2>Salle Polyvalente de Banfora</h2></div></li>
+    <li><img src="salle3.jpg"><div class="content"><h2>Salle Polyvalente de Banfora</h2></div></li>
+    <li><img src="canne a sucre.avif"><div class="content"><h2>Les champs de canne à sucre de Berégadougou</h2></div></li>
+    <li><img src="canne a sucre1.jpg"><div class="content"><h2>Les champs de canne à sucre de Berégadougou</h2></div></li>
+    <li><img src="canne a sucre2.jpg"><div class="content"><h2>Les champs de canne à sucre de Berégadougou</h2></div></li>
+    <li><img src="canne a sucre3.jpeg"><div class="content"><h2>Les champs de canne à sucre de Berégadougou</h2></div></li>
+    <li><img src="canne a sucre4.png"><div class="content"><h2>Les champs de canne à sucre de Berégadougou</h2></div></li>
+  </ul>
+
+  <footer id="footer">
+    <p>&copy; 2025 Découvrir Banfora - Tous droits réservés</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('header').classList.add('visible');
+      document.getElementById('title').classList.add('visible');
+      document.getElementById('gallery').classList.add('visible');
+      document.getElementById('footer').classList.add('visible');
+    });
+  </script>
+</body>
+</html>
